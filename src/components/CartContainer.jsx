@@ -1,16 +1,14 @@
-import React,{useEffect, useState} from "react";
-import "./styles/cart.css"
+import React, { useEffect, useState } from "react";
+import "./styles/cart.css";
 
 const Cart = ({ cart, setCart, handleChange }) => {
-  const {price} = cart
+  const { price } = cart;
   const [prices, setPrices] = useState(0);
-
 
   const handleRemove = (id) => {
     const arr = cart.filter((item) => item.id !== id);
     setCart(arr);
-    handlePrice()
- 
+    handlePrice();
   };
 
   const handlePrice = () => {
@@ -32,9 +30,9 @@ const Cart = ({ cart, setCart, handleChange }) => {
             <p>{item.title}</p>
           </div>
           <div>
-            <button onClick={()=> handleChange(item, 1)}>+</button>
+            <button onClick={() => handleChange(item, 1)}>+</button>
             <button>{item.amount}</button>
-            <button onClick={()=> handleChange(item, -1)}>-</button>
+            <button onClick={() => handleChange(item, -1)}>-</button>
           </div>
           <div>
             <span>{"$" + item.price}</span>
