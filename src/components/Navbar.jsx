@@ -1,6 +1,9 @@
 import React,{useState} from 'react'
 import './styles/navbar.css'
 import CartContainer from './CartContainer'
+import {FaShoppingCart} from 'react-icons/fa'
+
+
 
 
 const Navbar = ({cart, setCart, handleChange}) => {
@@ -14,8 +17,11 @@ const goToCart = () =>{
   return (
     
     <div className='nav_box'>
-      <h1 className='title'>My Shopping</h1>
-      <button onClick={goToCart} className='go-btn'>Go to Cart ({cart.length})</button>
+      <h1 className='title'>19th Century Bookstore</h1>
+      <button onClick={goToCart} className='go-btn'>
+      <FaShoppingCart size="1.2rem" className='cart-icon'/>
+      <span className='items-amount'>{cart.length}</span>
+      </button>
       {gocart && <CartContainer cart={cart} setCart={setCart} id={cart.id} handleChange={handleChange}/>}
     </div>
     
