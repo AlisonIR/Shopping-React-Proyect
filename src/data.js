@@ -10,7 +10,7 @@ const data = [
     {
       id: 2,
       title: "Complete Herbal Herbology Guide",
-      author: "by Culpeper, Antique 19th Century Herbal Healing, Ancient Medicine, Science, Botany, Pharmacology",
+      author: "by Culpeper,Herbal Healing, Ancient Medicine, Botany, Pharmacology",
       price: 277,
       img: "https://i.etsystatic.com/29096381/r/il/22b75f/4410762001/il_794xN.4410762001_gmzh.jpg",
       amount: 1,

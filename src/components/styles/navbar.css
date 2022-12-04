@@ -20,6 +20,7 @@
   color: white;
   font-family: cursive;
   cursor: pointer;
+  margin-left: 10px;
 }
 
 .go-btn {
